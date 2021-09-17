@@ -25,7 +25,7 @@ contract Lottery{
         return uint256(keccak256(block.difficulty, block.timestamp, players.length)); // !!! not perfect random - only for example
     }
 
-    // we can add for visual test only!!! "view returns(address)" in function string & "return winner;" in the end of function
+
     function selectWinner() public{ 
         require(msg.sender == manager);
 
